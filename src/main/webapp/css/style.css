@@ -1,0 +1,10 @@
+.contenitore{
+  margin: 0px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+

@@ -1,0 +1,224 @@
+@charset "utf-8";
+@font-face{
+    font-family:"archia-regular";
+    src:url("https://dafonttop.com/wp-data/a/21/8021/file/Archia-Regular.otf") format("woff"),
+    url("https://dafonttop.com/wp-data/a/21/8021/file/Archia-Regular.otf") format("opentype"),
+    url("https://dafonttop.com/wp-data/a/21/8021/file/Archia-Regular.otf") format("truetype");
+}
+
+
+@font-face {
+    font-family: 'intro_script_demomedium';
+    src: url('./font/introscriptdemo-medium.woff2') format('woff2');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FCEFD4;
+}
+
+input:focus {
+    border: 2px solid green;
+    outline:none;
+
+}
+
+input:active{
+    border: 2px solid green;
+    outline:none;
+}
+
+.messaggio-errore{
+    display:none;
+    margin-bottom: 35px;
+    font-family: 'archia-regular';
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 150px;
+    background-color: #FCEFD4;
+    border-radius: 15px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.scritta{
+    display: inline-block;
+    padding-bottom: 20px;
+    font-family: 'intro_script_demomedium';
+}
+
+
+h2 {
+    font-size: 3rem;
+    font-family:'intro_script_demomedium';
+    text-align: center;
+    color: #2f2f2f;
+}
+
+label {
+    color: #2f2f2f;
+    font-size: 17px;
+    align-items: center;
+}
+
+.uname {
+    font-family: 'archia-regular';
+    width: 300px;
+    height: 30px;
+    border-color: #2f2f2f;
+    border: 2px solid #2f2f2f;
+    background-color: #FCEFD4;
+    border-radius: 17px;
+    padding-left: 8px;
+}
+
+.pass {
+    font-family: 'archia-regular';
+    width: 300px;
+    height: 30px;
+    border: 2px solid #2f2f2f;
+    background-color: #FCEFD4;
+    border-color: #2f2f2f;
+    border-radius: 17px;
+    padding-left: 8px;
+}
+
+.bottone-Schermata-Login {
+    font-family: 'archia-regular';
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+
+    color: #2f2f2f;
+    background-color: #FCEFD4;
+    font-size: 17px;
+    cursor:pointer;
+}
+
+span {
+    font-family: 'archia-regular';
+    color: #2f2f2f;
+    font-size: 17px;
+}
+
+a {
+    font-size: 0.8rem;
+    font-family: 'archia-regular';
+    color: #2f2f2f;
+    text-decoration: none;
+}
+
+.registrazione{
+    display:flex;
+    flex-direction: column;
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 150px;
+    background-color: #FCEFD4;
+    border-radius: 15px;
+    text-align: center;
+    padding-bottom: 30px;
+    position:fixed;
+    left: -300px;
+    transform: translateX(-50%);
+}
+.animate{
+    left:50%;
+    transition: left 1000ms;
+}
+
+.uname2{
+    display: inline-block;
+    width: 95px;
+    height: 30px;
+    border-color: #2f2f2f;
+    border: 2px solid #2f2f2f;
+    background-color: #FCEFD4;
+    border-radius: 17px;
+    padding-left: 8px;
+}
+
+.uname3{
+    width: 52px;
+    height: 30px;
+    border-color: #2f2f2f;
+    border: 2px solid #2f2f2f;
+    background-color: #FCEFD4;
+    border-radius: 17px;
+    padding-left: 8px;
+}
+
+.via{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-left: 30px;
+    padding-bottom: 15px;
+}
+
+.uname4{
+    width: 145px;
+    height: 30px;
+    border-color: #2f2f2f;
+    border: 2px solid #2f2f2f;
+    background-color: #FCEFD4;
+    border-radius: 17px;
+    padding-left: 8px;
+}
+
+.sex{
+    margin-left: 30px;
+    border-radius: 25px;
+    border: 2px solid #2f2f2f;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
+
+}
+
+.data{
+    background-color: red;
+    display: flex;
+}
+
+.uname5{
+    width: 87px;
+    height: 30px;
+    border-color: #2f2f2f;
+    border: 2px solid #2f2f2f;
+    background-color: #FCEFD4;
+    border-radius: 17px;
+    margin-left: 8px;
+}
+
+.error{
+    background-color: red;
+}
+
+.container-bottoni{
+    display:flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+
+@media screen and(max-width:800px){
+    body{
+        justify-content: center;
+    }
+
+
+}

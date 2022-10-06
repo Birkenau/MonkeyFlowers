@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+* {
+  margin: 0px;
+  margin-bottom:0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+
+}
+
+
+.hero{
+  height: 100%;
+  width:100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/banner3.png);
+  background-position: center;
+  background-size:cover;
+  position: absolute;
+}
+
+.form-box {
+  width: 690px;
+  height: 780px;
+  margin: 6% auto;
+  background: #fff;
+  padding: 20px;
+}
+
+.button-box
+{
+  width:220px;
+  position: relative;
+  border-radius: 30px;
+}
+
+.toggle-btn
+{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn
+{
+  top:0;
+  left:0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #F06292 , #EA80FC);
+  border-radius: 30px;
+  transition: .5s;
+
+}
+
+
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #dc1917, #b20002,#750101);
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #7a1f17;
+}
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  background: #000000;
+  border-color: #d9d9d9;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .button {
+  height: 45px;
+  margin: 35px 0
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #EA80FC,#F06292 , #E91E63);
+}
+
+form .button input:hover {
+  background: linear-gradient(-135deg, #EA80FC,#F06292, #E91E63);
+}
+
+@media(max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .category {
+    width: 100%;
+  }
+
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media(max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}
+
+.linea {
+  margin-right: 77%;
+}
+
+.img
+{
+  padding-left:40px;
+}
+
+.img2 {
+  position: relative;
+  float: none;
+  width: 700px;
+  height: 555px;
+  top: -25px;
+  right: 500px;
+}
+
+#index27 {
+  position: relative;
+  float: none;
+  width: 700px;
+  height: 555px;
+  top: 200px;
+  right: -550px;
+}
+
+.reg {
+
+  border-radius: 5px;
+  border: 0;
+  font-family: 'normal';
+  font-size: 120%;
+  color: white;
+  padding-top:320px;
+  padding-left:140px;
+
+}
+
+
+#index28 {
+  border-radius: 5px;
+  position: absolute;
+  height: 56px;
+  width: 340px;
+  background: rgb(57, 57, 57);
+  right: 150px;
+  bottom: 530px;
+}
+
+#indexusername {
+  position: absolute;
+  left: 45px;
+  color: white;
+  font-size: 130%;
+  top: 11px;
+  width: 245px;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  max-height: 30px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#indexsubmit {
+  width: 340px;
+  height: 70px;
+  border-radius: 5px;
+  background: rgb(240, 98, 146);
+  border: 0;
+  font-family: 'normal';
+  font-size: 150%;
+  color: white;
+  cursor: pointer;
+}
+
+#indexsubmit:hover {
+  background: rgb(240, 98, 146);
+}
+
+#indexsubmit:active {
+  background: rgb(240, 98, 146);
+}
+
+#indexsubmit:focus {
+  outline: none;
+}
+
+#index29 {
+  position: absolute;
+  height: 250px;
+  width: 350px;
+  top: 470px;
+  left: 730px;
+  font-size: 130%;
+}
+
+#indexreg {
+  width: 340px;
+  height: 70px;
+  border-radius: 5px;
+  background: rgb(207, 54, 106);
+  border: 0;
+  font-family: 'normal';
+  font-size: 150%;
+  color: white;
+  cursor: pointer;
+}
+
+#indexreg:hover {
+  background: rgb(255, 0, 0);
+}
+
+#indexsubmit:active {
+  background: rgb(240, 98, 146);
+}
+
+#indexsubmit:focus {
+  outline: none;
+}
+
+
+
+.indexinput {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  position: relative;
+  width: 340px;
+  height: 69px;
+  background: rgb(245,245,245);
+  border: 0;
+  color: rgb(127,127,127);
+  font-family: 'normal';
+  font-size: 150%;
+  padding-left: 25px;
+}
+
+.indexinput:focus {
+  outline: none;
+}
+
+
+.logo {
+  border-radius: 5px;
+  position: absolute;
+  height: 56px;
+  width: 340px;
+  left: 640px;
+  top:150px;
+
+}
